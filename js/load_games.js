@@ -1,5 +1,5 @@
 async function loadGames() {
-    const games_json = (await (await fetch("/games/all.json")).text());
+    const games_json = (await (await fetch("games/all.json")).text());
     const games = JSON.parse(games_json);
 
     const gameDataList = games.map(game => {
