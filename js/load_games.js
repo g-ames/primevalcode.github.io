@@ -1,5 +1,6 @@
 async function loadGames() {
-    const games_json = (await (await fetch("games/all.json")).text());
+    // makes games_json global so that it can be accessed by the search bar...
+    let games_json = (await (await fetch("games/all.json")).text());
     const games = JSON.parse(games_json);
 
     const gameDataList = games.map(game => {
