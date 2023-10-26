@@ -15,7 +15,7 @@ function linkToName(link) {
         name += ` (${parts.slice(0, -3).join(', ')})`;
     }
         
-    return name.charAt(0).toUpperCase() + name.slice(1);    
+    return ((name.split('/').pop()).charAt(0).toUpperCase() + name.slice(1)).replaceAll('-', ' ');    
 }
 
 function setDetailSidebar(details) {
