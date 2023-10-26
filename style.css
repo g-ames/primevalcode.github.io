@@ -40,6 +40,16 @@ body {
  .rounded-borders {
      border-radius: 1vh;
 }
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
  button {
      width: fit-content;
      height: fit-content;
@@ -47,6 +57,7 @@ body {
      border: 1px solid rgba(255, 255, 255, 0.3);
      border-radius: 6px;
      background-color: rgb(169, 16, 16);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      font-size: 16px;
      transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
     /* Adjust transition timing */
