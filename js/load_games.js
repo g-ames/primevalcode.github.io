@@ -6,7 +6,7 @@ async function loadGames() {
       return {
         link: `games/game/${game.slug}`, // Assuming the link should include the slug
         imagePath: game.thumbnail || example_image, // Use example_image if thumbnail is empty
-        description: game.slug // Use the slug for description
+        name: game.name
       };
     });
     createGameContainers(gameDataList);
