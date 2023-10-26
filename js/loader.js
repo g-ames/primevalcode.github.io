@@ -37,7 +37,7 @@ function createGameContainers(gameDataList) {
     const fragment = document.createDocumentFragment();
 
     gameDataList.forEach(gameData => {
-        const { link, imagePath, description } = gameData;
+        const { name, thumbnail, slug } = gameData;
 
         // Create the game container div
         const gameContainer = document.createElement('div');
@@ -90,7 +90,7 @@ function createGameContainers(gameDataList) {
         }
         const nameElement = document.createElement('h3');
         nameElement.classList.add('white');
-        nameElement.textContent = linkToName(link);        
+        nameElement.textContent = name;        
 
         gameDetails.appendChild(nameElement);
         gameDetails.appendChild(details);
