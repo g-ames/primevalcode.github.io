@@ -37,7 +37,7 @@ function createGameContainers(gameDataList) {
     const fragment = document.createDocumentFragment();
 
     gameDataList.forEach(gameData => {
-        const { link, imagePath, description } = gameData;
+        const { link, imagePath, name } = gameData;
 
         // Create the game container div
         const gameContainer = document.createElement('div');
