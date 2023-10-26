@@ -35,7 +35,7 @@ body {
             hsl(0, 100%, 50%) 200%);
     animation: rotateBackground 10s linear infinite;
     /* Rotate every 10 seconds */
-    background-attachment: scroll; /* Keep the background fixed while scrolling */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
 }
  .rounded-borders {
      border-radius: 1vh;
