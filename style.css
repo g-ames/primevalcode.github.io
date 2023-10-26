@@ -5,7 +5,7 @@
      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
      backdrop-filter: blur(5px);
      -webkit-backdrop-filter: blur(5px);
-     border: 1px solid rgba(255, 255, 255, 0.3);
+     border: 1px solid rgb(255, 0, 0);
      margin: 1em;
     /* Add margin for spacing */
      color: white;
@@ -30,13 +30,12 @@
 body {
     height: 100vh;
     margin: 0;
-    background-image: linear-gradient(155deg,
-            hsl(240deg 100% 11%) 0%,
-            hsl(345deg 81% 24%) 58%,
-            hsl(55deg 100% 22%) 100%);
+    background-image: linear-gradient(180deg,
+            hsl(0, 0%, 0%) 0%,
+            hsl(0, 100%, 50%) 200%);
     animation: rotateBackground 10s linear infinite;
     /* Rotate every 10 seconds */
-    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-attachment: scroll; /* Keep the background fixed while scrolling */
 }
  .rounded-borders {
      border-radius: 1vh;
@@ -47,18 +46,18 @@ body {
      padding: 0.5em 1em;
      border: 1px solid rgba(255, 255, 255, 0.3);
      border-radius: 6px;
-     background-color: rgb(36, 124, 226);
+     background-color: rgb(169, 16, 16);
      font-size: 16px;
      transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
     /* Adjust transition timing */
 }
  button:hover {
-     background-color: rgb(84, 156, 237);
+     background-color: rgb(255, 0, 0);
      transform: scale(1.05);
     /* Make the hover effect snappier */
 }
  button:active {
-     background-color: rgb(135, 184, 240);
+     background-color: rgba(255, 8, 0, 0.719);
 }
  .glassy {
      background: rgba(143, 124, 124, 0.25);
@@ -75,7 +74,7 @@ body {
     /* Center horizontally */
      align-items: center;
     /* Center vertically */
-     background-color: rgba(20, 20, 20, 0.25);
+     background-color: rgba(66, 61, 61, 0.25);
      padding: 10px;
      gap: 10px;
     /* Add spacing between the buttons */
@@ -134,7 +133,7 @@ body {
 }
  .on-hover:hover {
      transform: scale(1.1);
-     border: 1px solid rgba(42, 244, 255, 0.3);
+     border: 1px solid rgb(255, 0, 0);
 }
  .horizontal-stack {
      display: flex;
