@@ -11,11 +11,11 @@ else if (/windows phone/i.test(userAgent)) {
 
 // Android
 else if (/android/i.test(userAgent)) {
-	window.location.replace("https://play.google.com/store/apps/details?id=lol.justfall");
+	//window.location.replace("https://play.google.com/store/apps/details?id=lol.justfall");
 }
 
 // iOS
 else if ((/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream)
 || (navigator.maxTouchPoints && navigator.maxTouchPoints > 2 && /MacIntel/.test(navigator.platform))) {
-    window.location.replace("https://apps.apple.com/app/id1551844218");
+    //window.location.replace("https://apps.apple.com/app/id1551844218");
 }
