@@ -19,12 +19,11 @@ function linkToName(link) {
 }
 
 function setDetailSidebar(details) {
-    const { link, imagePath, description } = details;
-    const name = linkToName(link);
+    const { link, imagePath, name } = details;
 
     detailSidebarName.textContent = name;
     detailSidebarThumbnail.src = imagePath;
-    detailSidebarDesc.textContent = description;
+    detailSidebarDesc.textContent = "";
     detailSidebarGo.href = link;
     detailSidebarGo.children[0].textContent = `Go to ${name}!`;
     detailSidebarGo.style.display = '';
