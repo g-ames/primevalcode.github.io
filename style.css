@@ -37,6 +37,18 @@ body {
     /* Rotate every 10 seconds */
     background-attachment: fixed; /* Keep the background fixed while scrolling */
 }
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+}
+.small {
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+}
  .rounded-borders {
      border-radius: 1vh;
 }
